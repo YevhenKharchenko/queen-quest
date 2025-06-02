@@ -1,6 +1,6 @@
 .header {
   background: transparent;
-  padding-top: 48px;
+  padding-top: 14px;
   padding-bottom: 14px;
   position: fixed;
   width: 100%;
@@ -8,21 +8,21 @@
   z-index: 10;
 
   &.scrolled {
-    background: #ebbdea;
+    background: #f8dbeb;
 
     .nav-list-link {
-      color: #3a0d51;
+      color: #4a2b5f;
 
       &:hover,
       &.active {
-        color: #e15f39;
+        color: #ff5ca2;
       }
     }
   }
 
   @include media(desktop) {
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -60,11 +60,12 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #3a0d51;
+  color: #4a2b5f;
   transition: all 0.3s ease-in-out;
 }
 
 .nav-list-link.active {
+  color: #ff5ca2;
 }
 
 .privacy-body .nav-list-link {

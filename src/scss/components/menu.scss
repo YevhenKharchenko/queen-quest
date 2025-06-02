@@ -1,7 +1,7 @@
 .context-menu {
   display: none;
-  background: linear-gradient(180deg, #ebbdea 0%, #9673db 100%);
-  padding: 48px 0;
+  background: #ff5ca2;
+  padding: 14px 0;
   width: 100%;
   height: 100%;
   overflow-y: scroll;
@@ -24,7 +24,7 @@
 .context-btn-wrapper {
   display: flex;
   justify-content: end;
-  margin-bottom: 86px;
+  margin-bottom: 106px;
 }
 
 .close-btn {
@@ -56,11 +56,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #3a0d51;
+  color: #4a2b5f;
   transition: all 0.3s ease-in-out;
 
   &:active {
-    color: #e15f39;
   }
 }
 
