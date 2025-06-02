@@ -1,7 +1,7 @@
 :root {
   font-family: 'Nunito', sans-serif;
   color: $_main_color;
-  background: linear-gradient(180deg, #ebbdea 0%, #9673db 100%);
+  background: $_main_bg_color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

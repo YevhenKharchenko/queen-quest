@@ -1,4 +1,5 @@
 .about-bg-wrapper {
+  padding-top: 80px;
   padding-bottom: 80px;
 
   @include media(desktop) {
@@ -14,8 +15,12 @@
   padding-right: 0;
 
   @include media(desktop) {
-    padding-left: 80px;
     padding-right: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
   }
 }
 
@@ -26,10 +31,6 @@
 
   @include media(desktop) {
     margin: 0;
-    position: absolute;
-    bottom: 150px;
-    left: 493px;
-    z-index: 1;
   }
 }
 
@@ -40,21 +41,12 @@
   @include media(desktop) {
     padding-left: 0;
     padding-right: 0;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    position: relative;
   }
 }
 
 .about-text-wrapper {
-  background: #eac9f8;
-  border-radius: 12px;
-  padding: 18px;
-
   @include media(desktop) {
-    max-width: 627px;
-    max-height: fit-content;
+    max-width: 630px;
   }
 }
 
@@ -63,25 +55,50 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #3a0d51;
+  color: #4a2b5f;
   word-break: break-word;
 }
 
-.about-img {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-  }
-}
-
-.about-img-glove {
+.about-blue-candy-img {
   display: none;
 
   @include media(desktop) {
     display: block;
     position: absolute;
-    bottom: -63px;
-    left: 38px;
+    top: 100px;
+    left: 526px;
+  }
+}
+
+.about-bottom-blue-candy-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    bottom: 36px;
+    right: 299px;
+  }
+}
+
+.about-red-candy-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 141px;
+    left: 567px;
+  }
+}
+
+.about-big-blue-candy-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    bottom: 22px;
+    right: 154px;
   }
 }

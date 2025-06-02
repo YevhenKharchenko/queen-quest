@@ -1,14 +1,12 @@
 .hero-section {
-  padding-bottom: 80px;
-
   @include media(desktop) {
-    padding-bottom: 150px;
+    padding-bottom: 0px;
   }
 }
 
 .hero-bg-wrapper {
-  padding-top: 104px;
-  padding-bottom: 382px;
+  padding-top: 130px;
+  padding-bottom: 9px;
   background-image: url(../img/hero/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -18,8 +16,9 @@
 
   @include media(desktop) {
     background-image: url(../img/hero/hero-bg-desk.jpg);
-    padding-top: 105px;
-    padding-bottom: 286px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 820px;
     max-width: 1440px;
   }
 }
@@ -27,27 +26,47 @@
 .hero-title-img {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 132px;
 
   @include media(desktop) {
-  }
-}
-
-.hero-boy-img {
-  position: absolute;
-  bottom: 0;
-  left: 25px;
-
-  @include media(desktop) {
-    left: 80px;
+    display: none;
   }
 }
 
 .hero-girl-img {
-  position: absolute;
-  bottom: 0;
-  right: 25px;
+  margin: 0 auto;
 
   @include media(desktop) {
-    right: 80px;
+    display: none;
+  }
+}
+
+.hero-apple-img {
+  position: absolute;
+  bottom: 26px;
+  left: 32px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.hero-left-ellipse-img {
+  position: absolute;
+  bottom: 233px;
+  left: 27px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.hero-right-ellipse-img {
+  position: absolute;
+  top: 347px;
+  right: 32px;
+
+  @include media(desktop) {
+    display: none;
   }
 }

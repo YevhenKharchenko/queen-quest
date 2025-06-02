@@ -1,45 +1,64 @@
-.characters-bg-wrapper {
+.characters-section {
   padding-bottom: 80px;
 
   @include media(desktop) {
     padding-bottom: 150px;
+  }
+}
+
+.characters-section-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
     max-width: 1440px;
-    margin: 0 auto;
-    position: relative;
   }
 }
 
 .characters-container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.characters-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.characters-swiper-container {
+  max-width: 305px;
+  margin-left: auto;
+  margin-right: auto;
+  visibility: hidden;
 
   @include media(desktop) {
-    flex-direction: row;
-    justify-content: center;
+    max-width: 1440px;
   }
 }
 
-.characters-text-wrapper {
+.characters-swiper-container.show {
+  visibility: visible;
+}
+
+.characters-slide {
   background: #eac9f8;
   border-radius: 12px;
-  padding: 10px 22px;
-
-  @include media(desktop) {
-  }
+  padding: 28px 22px 40px 22px;
+  max-width: 305px;
+  height: 312px !important;
 }
 
-.characters-name {
+.characters-picture-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.characters-title {
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
   font-size: 20px;
   text-align: center;
   color: #e15f39;
-  word-break: break-word;
-  margin-bottom: 6px;
+  margin-bottom: 14px;
 }
 
 .characters-text {
@@ -49,72 +68,4 @@
   line-height: 1.5;
   text-align: center;
   color: #3a0d51;
-  word-break: break-word;
-  max-width: 370px;
-}
-
-.characters-big-star-img {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-    position: absolute;
-    top: 26px;
-    left: 269px;
-  }
-}
-
-.characters-shield-img {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-    position: absolute;
-    top: 119px;
-    left: 80px;
-  }
-}
-
-.characters-cup-img {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-    position: absolute;
-    bottom: 180px;
-    left: 184px;
-  }
-}
-
-.characters-hammer-img {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-    position: absolute;
-    top: 83px;
-    right: 94px;
-  }
-}
-
-.characters-small-star-img {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-    position: absolute;
-    top: 176px;
-    right: 270px;
-  }
-}
-
-.characters-axe-img {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-    position: absolute;
-    bottom: 199px;
-    right: 116px;
-  }
 }

@@ -62,8 +62,49 @@
   }
 }
 
+.controls {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    gap: 104px;
+  }
+}
+
 .gallery-controls {
   @include media(desktop) {
     margin-top: 84px;
+  }
+}
+
+.arrow-btn {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  transition: transform 0.3s ease-in-out;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  @include media(desktop) {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+      transform: none;
+    }
   }
 }
