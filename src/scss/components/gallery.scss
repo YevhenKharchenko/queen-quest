@@ -10,9 +10,6 @@
 }
 
 .gallery-title {
-  @include media(desktop) {
-    margin-bottom: 92px;
-  }
 }
 
 .gallery-section-wrapper {
@@ -33,7 +30,7 @@
 }
 
 .gallery-swiper-container {
-  max-width: 335px;
+  max-width: 305px;
   margin-left: auto;
   margin-right: auto;
   visibility: hidden;
@@ -48,18 +45,7 @@
 }
 
 .gallery-slide {
-  transition: all 0.3s ease-in-out;
-
-  @include media(desktop) {
-    flex-shrink: 0;
-
-    &.swiper-slide-active {
-      margin-left: 65px !important;
-      margin-right: 70px !important;
-      transform: scale(1.45) !important;
-      z-index: 2;
-    }
-  }
+  max-width: 305px;
 }
 
 .controls {
@@ -70,13 +56,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 28px;
-    gap: 104px;
-  }
-}
-
-.gallery-controls {
-  @include media(desktop) {
-    margin-top: 84px;
+    gap: 28px;
   }
 }
 

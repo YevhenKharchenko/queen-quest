@@ -1,9 +1,6 @@
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
 
-const charactersLeftArrow = document.getElementById('charactersLeftArrow');
-const charactersRightArrow = document.getElementById('charactersRightArrow');
-
 let charactersSwiper;
 
 charactersSwiper = new Swiper('.characters-swiper-container', {
@@ -23,6 +20,8 @@ charactersSwiper = new Swiper('.characters-swiper-container', {
   breakpoints: {
     1440: {
       slidesPerView: 4,
+      grabCursor: false,
+      disableOnInteraction: true,
     },
   },
   on: {
@@ -31,23 +30,5 @@ charactersSwiper = new Swiper('.characters-swiper-container', {
         .querySelector('.characters-swiper-container')
         .classList.add('show');
     },
-    slideChange: function () {
-      updateCharactersArrows(this);
-    },
   },
-});
-
-updateCharactersArrows(charactersSwiper);
-
-function updateCharactersArrows(swiper) {
-  charactersLeftArrow.disabled = swiper.isBeginning;
-  charactersRightArrow.disabled = swiper.isEnd;
-}
-
-charactersLeftArrow.addEventListener('click', () => {
-  charactersSwiper.slidePrev();
-});
-
-charactersRightArrow.addEventListener('click', () => {
-  charactersSwiper.slideNext();
 });

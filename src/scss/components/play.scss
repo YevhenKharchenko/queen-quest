@@ -16,84 +16,78 @@
   @include media(desktop) {
     padding-left: 80px;
     padding-right: 80px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: end;
-    align-items: center;
-    gap: 48px;
   }
 }
 
 .play-bg-img {
+  margin-bottom: 22px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 22px;
 
   @include media(desktop) {
     margin: 0;
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 .play-content-wrapper {
   padding-left: 20px;
   padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 
   @include media(desktop) {
     padding-left: 0;
     padding-right: 0;
-    max-width: 494px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0;
   }
 }
 
 .play-list {
   display: flex;
   flex-direction: column;
+  align-items: start;
   gap: 12px;
 }
 
 .play-list-item {
-  background: #eac9f8;
-  border-radius: 12px;
-  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.play-bottom-list-item {
+  @include media(desktop) {
+    flex-direction: row-reverse;
+  }
+}
+
+.play-item-text-wrapper {
+  max-width: 200px;
+
+  @include media(desktop) {
+    max-width: 302px;
+  }
+}
+
+.play-img {
+  min-width: 114px;
+
+  @include media(desktop) {
+    max-width: 196px;
+  }
 }
 
 .play-item-text {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;
+  font-family: 'Chewy', sans-serif;
+  font-weight: 400;
   font-size: 20px;
-  text-align: center;
-  color: #3a0d51;
-}
-
-.play-small-star-img {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-    position: absolute;
-    top: 54px;
-    left: 184px;
-  }
-}
-
-.play-medium-star-img {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-    position: absolute;
-    top: 131px;
-    left: 128px;
-  }
-}
-
-.play-big-star-img {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-    position: absolute;
-    top: 38px;
-    left: 93px;
-  }
+  color: #4a2b5f;
 }

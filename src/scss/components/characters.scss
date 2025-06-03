@@ -18,8 +18,11 @@
 }
 
 .characters-container {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
+
+  @include media(desktop) {
+    padding: 0 80px;
+  }
 }
 
 .characters-swiper-container {
@@ -38,11 +41,7 @@
 }
 
 .characters-slide {
-  background: #eac9f8;
-  border-radius: 12px;
-  padding: 28px 22px 40px 22px;
   max-width: 305px;
-  height: 312px !important;
 }
 
 .characters-picture-wrapper {
@@ -53,12 +52,12 @@
 }
 
 .characters-title {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;
+  font-family: 'Chewy', sans-serif;
+  font-weight: 400;
   font-size: 20px;
   text-align: center;
-  color: #e15f39;
-  margin-bottom: 14px;
+  color: #f70;
+  margin-bottom: 12px;
 }
 
 .characters-text {
@@ -67,5 +66,5 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #3a0d51;
+  color: #4a2b5f;
 }
